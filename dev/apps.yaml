@@ -5,6 +5,8 @@ metadata:
   name: apps
   namespace: flux-system
 spec:
+  dependsOn:
+    - name: linkerd
   interval: 1m0s
   path: ./apps
   prune: true
