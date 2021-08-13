@@ -31,3 +31,5 @@ spec:
     identity:
       issuer:
         crtExpiry: "2022-10-20T10:29:51Z"
+    podLabels:
+      linkerd.io/inject: ingress
