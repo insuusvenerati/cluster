@@ -6,10 +6,6 @@ metadata:
 spec:
   dependsOn:
     - name: linkerd
-  healthChecks:
-    - kind: Deployment
-      name: linkerd-proxy-injector
-      namespace: linkerd
   interval: 1m0s
   path: ./common/linkerd-viz
   prune: true
