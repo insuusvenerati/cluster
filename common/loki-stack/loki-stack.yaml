@@ -48,8 +48,3 @@ spec:
         - grafana-worldmap-panel
       persistence:
         enabled: true
-    loki:
-      ingress:
-        enabled: true
-        hosts:
-          - host: loki.k8s.local
