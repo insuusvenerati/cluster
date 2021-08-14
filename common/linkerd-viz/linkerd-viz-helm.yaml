@@ -24,3 +24,5 @@ spec:
     grafanaUrl: "http://grafana.k8s.local"
     grafana:
       enabled: false
+    prometheus:
+      enabled: false

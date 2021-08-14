@@ -37,7 +37,7 @@ spec:
     logstash:
       enabled: false
     grafana:
-      enabled: true
+      enabled: false
       image:
         tag: 7.5.0
       ingress:
@@ -50,3 +50,5 @@ spec:
         - grafana-worldmap-panel
       persistence:
         enabled: true
+    prometheus:
+      enabled: false
