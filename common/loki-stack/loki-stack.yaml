@@ -17,6 +17,10 @@ spec:
   releaseName: loki-stack
   targetNamespace: loki
   values:
+    filebeat:
+      enabled: true
+    logstash:
+      enabled: true
     grafana:
       enabled: true
       ingress:
