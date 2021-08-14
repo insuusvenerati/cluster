@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: flagger
-  namespace: linkerd
+  namespace: flux-system
 spec:
   interval: 10m
   url: https://github.com/weaveworks/flagger
