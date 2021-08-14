@@ -16,3 +16,6 @@ spec:
   interval: 1m0s
   releaseName: loki-stack
   targetNamespace: loki
+  values:
+    grafana:
+      enabled: true
