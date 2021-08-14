@@ -14,10 +14,10 @@ spec:
         name: stiforr
   install:
     remediation:
-      retries: 3
+      retries: 10
   upgrade:
     remediation:
-      retries: 3
+      retries: 10
   interval: 10m0s
   targetNamespace: default
   values:
