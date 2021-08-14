@@ -19,3 +19,7 @@ spec:
   values:
     grafana:
       enabled: true
+      ingress:
+        enabled: true
+        hosts:
+          - grafana.k8s.local
