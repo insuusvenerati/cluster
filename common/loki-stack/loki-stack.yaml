@@ -25,3 +25,5 @@ spec:
           - grafana.k8s.local
       plugins:
         - grafana-worldmap-panel
+      persistence:
+        enabled: true
