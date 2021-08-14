@@ -38,6 +38,8 @@ spec:
       enabled: false
     grafana:
       enabled: true
+      image:
+        tag: 8.1.1
       ingress:
         enabled: true
         annotations:
