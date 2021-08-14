@@ -13,6 +13,11 @@ spec:
         name: linkerd
   install:
     createNamespace: true
+    remediation:
+      retries: 10
+  upgrade:
+    remediation:
+      retries: 10
   interval: 1m0s
   targetNamespace: linkerd-viz
   values:
