@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: linkerd
+    - name: flagger
   interval: 1m0s
   path: ./apps
   prune: true
