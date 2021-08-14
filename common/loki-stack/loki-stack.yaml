@@ -18,7 +18,7 @@ spec:
   targetNamespace: loki
   values:
     filebeat:
-      enabled: true
+      enabled: false
       filebeatConfig:
         filebeat.yml: |
           # logging.level: debug
@@ -35,7 +35,7 @@ spec:
           output.logstash:
             hosts: ["loki-stack-logstash-headless:9600"]
     logstash:
-      enabled: true
+      enabled: false
     grafana:
       enabled: true
       ingress:
