@@ -19,6 +19,21 @@ spec:
   values:
     filebeat:
       enabled: true
+      filebeatConfig:
+        filebeat.yml: |
+          # logging.level: debug
+          filebeat.inputs:
+          - type: container
+            paths:
+              - /var/log/containers/*.log
+            processors:
+            - add_kubernetes_metadata:
+                host: ${NODE_NAME}
+                matchers:
+                - logs_path:
+                    logs_path: "/var/log/containers/"
+          output.logstash:
+            hosts: ["loki-stack-logstash-headless:9600"]
     logstash:
       enabled: true
     grafana:
