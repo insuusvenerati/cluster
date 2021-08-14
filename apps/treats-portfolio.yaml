@@ -1,32 +1,32 @@
-# ---
-# apiVersion: helm.toolkit.fluxcd.io/v2beta1
-# kind: HelmRelease
-# metadata:
-#   name: treats-portfolio
-#   namespace: flux-system
-# spec:
-#   chart:
-#     spec:
-#       chart: treats-portfolio
-#       version: 0.19.1
-#       sourceRef:
-#         kind: HelmRepository
-#         name: stiforr
-#   install:
-#     remediation:
-#       retries: 3
-#   upgrade:
-#     remediation:
-#       retries: 3
-#   interval: 10m0s
-#   targetNamespace: default
-#   values:
-#     image:
-#       tag: 8.4.0-develop.17 # {"$imagepolicy": "flux-system:treats-portfolio:tag"}
-#     ingress:
-#       enabled: true
-#       className: "nginx"
-#       hosts:
-#         - host: treats.k8s.local
-#           paths:
-#             - path: /
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: treats-portfolio
+  namespace: flux-system
+spec:
+  chart:
+    spec:
+      chart: treats-portfolio
+      version: 0.19.1
+      sourceRef:
+        kind: HelmRepository
+        name: stiforr
+  install:
+    remediation:
+      retries: 3
+  upgrade:
+    remediation:
+      retries: 3
+  interval: 10m0s
+  targetNamespace: default
+  values:
+    image:
+      tag: 8.4.0-develop.17 # {"$imagepolicy": "flux-system:treats-portfolio:tag"}
+    ingress:
+      enabled: true
+      className: "nginx"
+      hosts:
+        - host: treats.k8s.local
+          paths:
+            - path: /
