@@ -39,7 +39,7 @@ spec:
     grafana:
       enabled: true
       image:
-        tag: 8.1.1
+        tag: 7.5.0
       ingress:
         enabled: true
         annotations:
