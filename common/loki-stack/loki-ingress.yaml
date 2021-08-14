@@ -11,5 +11,5 @@ spec:
       http:
         paths:
           - backend:
-              serviceName: loki
+              serviceName: loki-stack
               servicePort: 3100
