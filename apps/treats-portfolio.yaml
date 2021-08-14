@@ -30,3 +30,4 @@ spec:
         - host: treats.k8s.local
           paths:
             - path: /
+              pathType: ImplementationSpecific
