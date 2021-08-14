@@ -23,3 +23,5 @@ spec:
         enabled: true
         hosts:
           - grafana.k8s.local
+      plugins:
+        - grafana-worldmap-panel
