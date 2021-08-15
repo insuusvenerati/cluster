@@ -1,30 +1,30 @@
----
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: linkerd-viz
-  namespace: flux-system
-spec:
-  chart:
-    spec:
-      chart: linkerd-viz
-      sourceRef:
-        kind: HelmRepository
-        name: linkerd
-  install:
-    createNamespace: true
-    remediation:
-      retries: 20
-  upgrade:
-    remediation:
-      retries: 20
-  interval: 1m0s
-  targetNamespace: linkerd-viz
-  values:
-    grafanaUrl: "http://monitoring-kube-prometheus-stack-grafana.monitoring.svc.cluster.local:3000"
-    prometheusUrl: "http://monitoring-kube-prometheus-prometheus.monitoring.svc.cluster.local:9090"
-    grafana:
-      enabled: false
-    prometheus:
-      enabled: false
-    installNamespace: false
+# ---
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: linkerd-viz
+#   namespace: flux-system
+# spec:
+#   chart:
+#     spec:
+#       chart: linkerd-viz
+#       sourceRef:
+#         kind: HelmRepository
+#         name: linkerd
+#   install:
+#     createNamespace: true
+#     remediation:
+#       retries: 20
+#   upgrade:
+#     remediation:
+#       retries: 20
+#   interval: 1m0s
+#   targetNamespace: linkerd-viz
+#   values:
+#     grafanaUrl: "http://monitoring-kube-prometheus-stack-grafana.monitoring.svc.cluster.local:3000"
+#     prometheusUrl: "http://monitoring-kube-prometheus-prometheus.monitoring.svc.cluster.local:9090"
+#     grafana:
+#       enabled: false
+#     prometheus:
+#       enabled: false
+#     installNamespace: false
