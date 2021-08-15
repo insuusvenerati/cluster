@@ -5,6 +5,7 @@ metadata:
   name: kube-prometheus-stack
   namespace: flux-system
 spec:
+  releaseName: "kube-prometheus-stack"
   chart:
     spec:
       chart: kube-prometheus-stack
