@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: linkerd
   install:
-    createNamespace: false
+    createNamespace: true
     remediation:
       retries: 10
   upgrade:
