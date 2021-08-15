@@ -27,3 +27,4 @@ spec:
       enabled: false
     prometheus:
       enabled: false
+    installNamespace: false
