@@ -21,10 +21,10 @@ spec:
   interval: 1m0s
   targetNamespace: linkerd-viz
   values:
-    grafanaUrl: "http://monitoring-kube-prometheus-stack-grafana.monitoring.svc.cluster.local:3000"
+    # grafanaUrl: "http://monitoring-kube-prometheus-stack-grafana.monitoring.svc.cluster.local:3000"
     # prometheusUrl: "http://monitoring-kube-prometheus-prometheus.monitoring.svc.cluster.local:9090"
     grafana:
-      enabled: false
+      enabled: true
     prometheus:
       enabled: true
     installNamespace: false
