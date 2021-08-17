@@ -519,10 +519,10 @@ data:
     [server]
     root_url = %(protocol)s://%(domain)s:/grafana/
     [auth]
-    disable_login_form = true
+    disable_login_form = false
     [auth.anonymous]
     enabled = true
-    org_role = Viewer
+    org_role = Editor
     [auth.basic]
     enabled = false
     [analytics]
