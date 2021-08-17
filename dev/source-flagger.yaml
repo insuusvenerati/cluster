@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  url: https://github.com/weaveworks/flagger
+  url: https://github.com/fluxcd/flagger
   ref:
     tag: v1.12.1
   ignore: |
