@@ -31,3 +31,5 @@ spec:
           paths:
             - path: /
               pathType: ImplementationSpecific
+    flagger:
+      enabled: true
