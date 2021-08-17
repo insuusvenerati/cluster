@@ -15,7 +15,7 @@ spec:
   install:
     createNamespace: true
   interval: 1m0s
-  targetNamespace: monitoring
+  targetNamespace: linkerd-viz
   values:
     grafana:
       enabled: false
