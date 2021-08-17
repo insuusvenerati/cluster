@@ -751,6 +751,9 @@ data:
       - source_labels: [__meta_kubernetes_pod_container_name]
         action: replace
         target_label: component
+    - job_name: 'kube-state-metrics'
+      static_configs:
+      - targets: ['kube-prometheus-stack-kube-state-metrics.linkerd-viz.svc.cluster.local:8080']
 
     - job_name: 'linkerd-proxy'
       kubernetes_sd_configs:
