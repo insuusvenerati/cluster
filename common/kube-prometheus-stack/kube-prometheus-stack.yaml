@@ -18,6 +18,7 @@ spec:
   targetNamespace: monitoring
   values:
     grafana:
+      enabled: false
       ingress:
         enabled: false
         annotations:
