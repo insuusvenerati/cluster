@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 10m
   path: "./kustomize/linkerd/"
-  prune: true
+  prune: false
   sourceRef:
     kind: GitRepository
     name: flagger
