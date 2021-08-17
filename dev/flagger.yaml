@@ -7,10 +7,6 @@ metadata:
 spec:
   dependsOn:
     - name: linkerd
-  healthChecks:
-    - kind: Deployment
-      name: flagger
-      namespace: linkerd
   interval: 1m0s
   path: ./common/flagger
   prune: true
