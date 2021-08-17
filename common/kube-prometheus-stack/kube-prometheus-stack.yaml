@@ -1,26 +1,26 @@
----
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: kube-prometheus-stack
-  namespace: flux-system
-spec:
-  releaseName: "kube-prometheus-stack"
-  chart:
-    spec:
-      chart: kube-prometheus-stack
-      sourceRef:
-        kind: HelmRepository
-        name: prometheus
-  install:
-    createNamespace: true
-  interval: 1m0s
-  targetNamespace: monitoring
-  values:
-    grafana:
-      ingress:
-        enabled: true
-        annotations:
-          kubernetes.io/ingress.class: nginx
-        hosts:
-          - grafana.k8s.local
+# ---
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: kube-prometheus-stack
+#   namespace: flux-system
+# spec:
+#   releaseName: "kube-prometheus-stack"
+#   chart:
+#     spec:
+#       chart: kube-prometheus-stack
+#       sourceRef:
+#         kind: HelmRepository
+#         name: prometheus
+#   install:
+#     createNamespace: true
+#   interval: 1m0s
+#   targetNamespace: monitoring
+#   values:
+#     grafana:
+#       ingress:
+#         enabled: true
+#         annotations:
+#           kubernetes.io/ingress.class: nginx
+#         hosts:
+#           - grafana.k8s.local
