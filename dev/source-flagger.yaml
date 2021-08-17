@@ -4,7 +4,7 @@ metadata:
   name: flagger
   namespace: flux-system
 spec:
-  interval: 10m
+  interval: 24h
   url: https://github.com/fluxcd/flagger
   ref:
     tag: v1.12.1
