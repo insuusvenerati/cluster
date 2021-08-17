@@ -19,8 +19,14 @@ spec:
   values:
     grafana:
       ingress:
-        enabled: true
+        enabled: false
         annotations:
           kubernetes.io/ingress.class: nginx
         hosts:
           - grafana.k8s.local
+    alertmanager:
+      enabled: false
+    prometheusOperator:
+      enabled: false
+    prometheus:
+      enabled: false
