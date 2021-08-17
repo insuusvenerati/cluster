@@ -4,7 +4,7 @@ metadata:
   name: linkerd
   namespace: linkerd
 spec:
-  interval: 10m0s
+  interval: 24h
   releaseName: linkerd
   chart:
     spec:
