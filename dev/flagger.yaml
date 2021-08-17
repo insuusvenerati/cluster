@@ -6,11 +6,11 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-  - name: linkerd
+    - name: linkerd
   healthChecks:
-  - kind: Deployment
-    name: flagger
-    namespace: linkerd
+    - kind: Deployment
+      name: flagger
+      namespace: linkerd
   interval: 1m0s
   path: ./common/flagger
   prune: true
@@ -19,4 +19,3 @@ spec:
     name: flux-system
   timeout: 2m0s
   validation: client
-
