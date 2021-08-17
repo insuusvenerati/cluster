@@ -26,6 +26,10 @@ spec:
     ingress:
       enabled: true
       className: "nginx"
+      annotations:
+        nginx.ingress.kubernetes.io/configuration-snippet: |
+          proxy_set_header l5d-dst-override $service_name.$namespace.svc.cluster.local:$service_port;
+          grpc_set_header l5d-dst-override $service_name.$namespace.svc.cluster.local:$service_port;
       hosts:
         - host: treats.k8s.local
           paths:
