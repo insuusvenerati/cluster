@@ -15,3 +15,6 @@ spec:
     createNamespace: true
   interval: 24h
   targetNamespace: nginx
+  values:
+    podAnnotations:
+      linkerd.io/inject: ingress
