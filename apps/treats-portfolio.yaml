@@ -37,3 +37,16 @@ spec:
               pathType: ImplementationSpecific
     flagger:
       enabled: true
+    autoscaling:
+      enabled: true
+      minReplicas: 1
+      maxReplicas: 100
+      targetCPUUtilizationPercentage: 80
+      # targetMemoryUtilizationPercentage: 80
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+      requests:
+        cpu: 100m
+        memory: 128Mi
