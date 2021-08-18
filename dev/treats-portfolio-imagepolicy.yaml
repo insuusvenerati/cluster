@@ -7,8 +7,6 @@ metadata:
 spec:
   imageRepositoryRef:
     name: treats-portfolio
-  filterTags:
-    pattern: ".*-develop.*"
   policy:
     semver:
       range: ">=8.4.0 <9.0.0"
