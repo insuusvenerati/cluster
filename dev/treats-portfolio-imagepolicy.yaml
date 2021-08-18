@@ -11,4 +11,4 @@ spec:
     pattern: ".*-develop.*"
   policy:
     semver:
-      range: ">=8.4.0 <9.0.0"
+      range: "^8.x-0"
