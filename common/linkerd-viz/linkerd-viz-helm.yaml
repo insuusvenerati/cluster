@@ -22,8 +22,8 @@ spec:
   interval: 24h
   targetNamespace: linkerd-viz
   values:
-    grafanaUrl: ""
-    prometheusUrl: ""
+    grafanaUrl: "kube-prometheus-stack-grafana:3000"
+    prometheusUrl: "kube-prometheus-stack-prometheus:9090"
     grafana:
       enabled: false
     prometheus:
