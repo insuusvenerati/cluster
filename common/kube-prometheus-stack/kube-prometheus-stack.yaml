@@ -18,9 +18,12 @@ spec:
   targetNamespace: linkerd-viz
   values:
     grafana:
+      sidecar:
+        dashboards:
+          searchNamespace: ALL
       enabled: true
       ingress:
-        enabled: false
+        enabled: true
         annotations:
           kubernetes.io/ingress.class: nginx
         hosts:
@@ -30,4 +33,7 @@ spec:
     prometheusOperator:
       enabled: true
     prometheus:
-      enabled: true
+      prometheusSpec:
+        podMonitorSelector:
+          matchLabels:
+            app.kubernetes.io/part-of: flux
