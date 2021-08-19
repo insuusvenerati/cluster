@@ -19,7 +19,7 @@ spec:
   upgrade:
     remediation:
       retries: 20
-  interval: 1m0s
+  interval: 24h
   targetNamespace: linkerd-viz
   values:
     # grafanaUrl: "grafana:3000"
