@@ -18,7 +18,7 @@ spec:
   targetNamespace: linkerd-viz
   values:
     grafana:
-      enabled: false
+      enabled: true
       ingress:
         enabled: false
         annotations:
@@ -28,6 +28,6 @@ spec:
     alertmanager:
       enabled: false
     prometheusOperator:
-      enabled: false
+      enabled: true
     prometheus:
-      enabled: false
+      enabled: true
