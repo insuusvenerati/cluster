@@ -21,6 +21,8 @@ spec:
   targetNamespace: linkerd-viz
   values:
     grafana:
+      adminUser: admin
+      adminPassword: admin
       sidecar:
         dashboards:
           searchNamespace: ALL
