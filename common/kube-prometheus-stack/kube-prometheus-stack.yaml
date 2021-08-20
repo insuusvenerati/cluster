@@ -42,3 +42,9 @@ spec:
         podMonitorSelector:
           matchLabels:
             app.kubernetes.io/part-of: flux
+      ingress:
+        enabled: true
+        hosts:
+          - prom.k8s.local
+        paths:
+          - /
