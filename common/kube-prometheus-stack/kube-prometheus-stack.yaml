@@ -13,7 +13,7 @@ spec:
         kind: HelmRepository
         name: prometheus
   install:
-    createNamespace: true
+    createNamespace: false
     crds: Create
   upgrade:
     crds: CreateReplace
