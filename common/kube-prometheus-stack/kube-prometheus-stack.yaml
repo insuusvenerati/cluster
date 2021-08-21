@@ -13,12 +13,12 @@ spec:
         kind: HelmRepository
         name: prometheus
   install:
-    createNamespace: false
+    createNamespace: true
     crds: Create
   upgrade:
     crds: CreateReplace
   interval: 24h
-  targetNamespace: linkerd-viz
+  targetNamespace: monitoring
   values:
     defaultRules:
       annotations:
