@@ -21,7 +21,7 @@ spec:
   targetNamespace: default
   values:
     image:
-      tag: 8.5.0 # {"$imagepolicy": "flux-system:treats-portfolio:tag"}
+      tag: 8.4.0 # {"$imagepolicy": "flux-system:treats-portfolio:tag"}
     ingress:
       enabled: true
       className: "nginx"
