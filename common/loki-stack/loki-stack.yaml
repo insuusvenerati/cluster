@@ -15,7 +15,7 @@ spec:
     createNamespace: true
   interval: 1m0s
   releaseName: loki-stack
-  targetNamespace: loki
+  targetNamespace: monitoring
   values:
     filebeat:
       enabled: false
