@@ -20,6 +20,9 @@ spec:
   interval: 24h
   targetNamespace: linkerd-viz
   values:
+    defaultRules:
+      annotations:
+        linkerd.io/inject: disabled
     grafana:
       adminUser: admin
       adminPassword: admin
