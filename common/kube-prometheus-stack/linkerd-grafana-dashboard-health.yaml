@@ -96,7 +96,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -198,7 +198,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -293,7 +293,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -410,7 +410,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -505,7 +505,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -600,7 +600,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "description": "",
           "fieldConfig": {
             "defaults": {},
@@ -753,7 +753,7 @@ data:
               "bars": false,
               "dashLength": 10,
               "dashes": false,
-              "datasource": "${DS_PROMETHEUS}",
+              "datasource": "Prometheus",
               "fill": 1,
               "gridPos": {
                 "h": 7,
@@ -846,7 +846,7 @@ data:
               "bars": false,
               "dashLength": 10,
               "dashes": false,
-              "datasource": "${DS_PROMETHEUS}",
+              "datasource": "Prometheus",
               "fill": 0,
               "gridPos": {
                 "h": 7,
@@ -947,7 +947,7 @@ data:
                 "mode": "spectrum"
               },
               "dataFormat": "timeseries",
-              "datasource": "${DS_PROMETHEUS}",
+              "datasource": "Prometheus",
               "gridPos": {
                 "h": 7,
                 "w": 8,
@@ -1035,7 +1035,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -1125,7 +1125,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -1222,7 +1222,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -1312,7 +1312,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -1424,7 +1424,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -1514,7 +1514,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -1618,7 +1618,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -1722,7 +1722,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -1812,7 +1812,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -1916,7 +1916,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -2042,7 +2042,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -2153,7 +2153,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -2257,7 +2257,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fieldConfig": {
             "defaults": {},
             "overrides": []
@@ -2397,7 +2397,7 @@ data:
           {
             "allValue": ".*",
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "Prometheus",
             "definition": "",
             "description": null,
             "error": null,
@@ -2424,7 +2424,7 @@ data:
           {
             "allValue": ".*",
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "Prometheus",
             "definition": "",
             "description": null,
             "error": null,
@@ -2451,7 +2451,7 @@ data:
           {
             "allValue": ".*",
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "Prometheus",
             "definition": "",
             "description": null,
             "error": null,
@@ -2478,7 +2478,7 @@ data:
           {
             "allValue": ".*",
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "Prometheus",
             "definition": "",
             "description": null,
             "error": null,
