@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: myapp
+  name: linkerd-deployment-dashboard
   labels:
     grafana_dashboard: "2"
 data:
