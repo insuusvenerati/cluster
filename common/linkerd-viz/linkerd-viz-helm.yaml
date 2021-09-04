@@ -23,7 +23,7 @@ spec:
   # targetNamespace: linkerd-viz
   values:
     grafanaUrl: "http://grafana.k8s.local"
-    prometheusUrl: "http://prom.k8s.local"
+    prometheusUrl: "http://kube-prometheus-stack-prometheus.monitoring.svc.cluster.local:9090"
     grafana:
       enabled: false
     prometheus:
