@@ -17,4 +17,4 @@ spec:
   targetNamespace: nginx
   values:
     podAnnotations:
-      linkerd.io/inject: ingress
+      linkerd.io/inject: enabled
