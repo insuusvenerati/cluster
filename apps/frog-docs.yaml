@@ -13,3 +13,4 @@ spec:
         name: flux-system
   install: {}
   interval: 1m0s
+  targetNamespace: default
