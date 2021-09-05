@@ -2,13 +2,13 @@
 apiVersion: flagger.app/v1beta1
 kind: Canary
 metadata:
-  name: {{ include "frog-docs.fullname" . }}
+  name: {{ include "frog-docs-chart.fullname" . }}
   namespace: {{ .Release.Namespace }}
 spec:
   targetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "frog-docs.fullname" . }}
+    name: {{ include "frog-docs-chart.fullname" . }}
   service:
     port: {{ .Values.service.port }}
   {{- with .Values.flagger.analysis }}
