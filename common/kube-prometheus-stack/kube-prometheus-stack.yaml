@@ -24,12 +24,14 @@ spec:
       annotations:
         linkerd.io/inject: disabled
     grafana:
+      enabled: true
+      plugins:
+        - grafana-piechart-panel
       adminUser: admin
       adminPassword: admin
       sidecar:
         dashboards:
           searchNamespace: ALL
-      enabled: true
       ingress:
         enabled: true
         annotations:
