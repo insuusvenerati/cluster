@@ -43,6 +43,23 @@ service:
   type: ClusterIP
   port: 80
 
+flagger:
+  enabled: true
+  analysis:
+    interval: 10s
+    threshold: 5
+    stepWeight: 10
+    maxWeight: 100
+    metrics:
+      - name: request-success-rate
+        thresholdRange:
+          min: 99
+        interval: 1m
+      - name: request-duration
+        thresholdRange:
+          max: 500
+        interval: 1m
+
 ingress:
   enabled: true
   # className: "traefik-lb"
