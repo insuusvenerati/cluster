@@ -11,7 +11,7 @@ data:
               - url: https://logs-prod-us-central1.grafana.net
                 basic_auth:
                   username: 22653
-                  password: eyJrIjoiMmMzZWJlMTljMmE1M2YzOWE2Mjc1OTcyNDMwOGI5ODFhZDA1M2RjZSIsIm4iOiJsb2tpIiwiaWQiOjQ2NjY4Mn0=
+                  password: eyJrIjoiNTliOGU4NzM4MGE1ZDc4YTU4Nzk0NDYzZmUwMWIzMTdhNDE2MjJjNCIsIm4iOiJsb2tpIiwiaWQiOjQ2NjY4Mn0=
             name: default
             scrape_configs:
               - job_name: kubernetes-pods-name
