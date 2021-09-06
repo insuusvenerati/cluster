@@ -20,5 +20,7 @@ spec:
       hosts:
         - chat.k8s.local
     mongodb:
-      auth.password: "password"
-      auth.username: "rocketchat"
+      auth:
+        password: password
+        username: rocketchat
+        rootPassword: password
