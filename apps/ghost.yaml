@@ -16,7 +16,8 @@ spec:
   targetNamespace: default
   values:
     ghostUsername: stiforr
-    ghostPassword: password
+    ghostPassword: password12345
+    allowEmptyPassword: false
     service:
       type: ClusterIP
     ingress:
