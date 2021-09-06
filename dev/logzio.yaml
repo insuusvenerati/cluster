@@ -1,0 +1,21 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: logzio
+  namespace: flux-system
+spec:
+  chart:
+    spec:
+      chart: logzio-k8s-logs
+      sourceRef:
+        kind: HelmRepository
+        name: logzio
+  install: {}
+  interval: 30m0s
+  targetNamespace: monitoring
+  values:
+    secrets:
+      logzioShippingToken: "QFaiApxltJAlnZwpiNMuKbyowpsaxpMT"
+      logzioRegion: "us"
+      clusterName: "local"
