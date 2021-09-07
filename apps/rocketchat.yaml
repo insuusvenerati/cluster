@@ -24,3 +24,4 @@ spec:
         password: password
         username: rocketchat
         rootPassword: password
+        database: rocketchat
