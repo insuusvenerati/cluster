@@ -6,6 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   chart:
+    version: 7.6.20
     spec:
       chart: nginx-ingress-controller
       sourceRef:
