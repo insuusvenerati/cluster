@@ -1,0 +1,20 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: sentry
+  namespace: flux-system
+spec:
+  chart:
+    spec:
+      chart: sentry-kubernetes
+      sourceRef:
+        kind: HelmRepository
+        name: sentry
+  install:
+    createNamespace: true
+  interval: 30m0s
+  targetNamespace: sentry
+  values:
+    sentry:
+      dsn: https://67824d2b0f9f405fa6713b1892dab071@o122225.ingest.sentry.io/5836094
