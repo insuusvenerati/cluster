@@ -15,10 +15,12 @@ spec:
   interval: 30m0s
   targetNamespace: default
   values:
+    host: chat.k8s.local
     ingress:
       enabled: true
-      hosts:
-        - chat.k8s.local
+      annotations:
+        kubernetes.io/ingress.class: "nginx"
+      path: /
     mongodb:
       auth:
         password: password
