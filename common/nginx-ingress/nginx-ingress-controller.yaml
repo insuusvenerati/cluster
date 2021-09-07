@@ -22,4 +22,4 @@ spec:
     image:
       registry: docker.io
       repository: bitnami/nginx-ingress-controller
-      tag: 0.48.1-debian-10-r49
+      tag: 0.48.1-debian-10-r48
