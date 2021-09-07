@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: nginx-ingress-controller
-      version: 7.6.18
+      version: 7.6.21
       sourceRef:
         kind: HelmRepository
         name: bitnami
@@ -19,3 +19,7 @@ spec:
   values:
     podAnnotations:
       linkerd.io/inject: enabled
+    image:
+      registry: docker.io
+      repository: bitnami/nginx-ingress-controller
+      tag: 0.48.1-debian-10-r49
